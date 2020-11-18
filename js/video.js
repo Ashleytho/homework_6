@@ -12,3 +12,14 @@ document.querySelector("#pause").addEventListener("click", function() {
 	
 });
 
+document.querySelector("#slower").addEventListener("click", function() {
+	
+});
+
+document.querySelector("#faster").addEventListener("click", function() {
+	
+});
+
+document.querySelector("#skip").addEventListener("click", function() {
+	
+});
