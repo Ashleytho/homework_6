@@ -48,14 +48,14 @@ document.querySelector("#skip").addEventListener("click", function() {
 });
 
 document.querySelector("#mute").addEventListener("click", function() {
-	if (video.volume >= 0){
-		soundStatus = video.volume;
-		video.volume = 0;
-		document.getElementById('volume').innerHTML = video.volume;
+	if (video.muted == false){
+		video.muted = true;
+		document.getElementById('volume').innerHTML = 'muted';
 		document.getElementById('mute').innerHTML = 'Unmute';
 	}
-	else if (video.volume == 0){
-		document.getElementById('volume').innerHTML = soundStatus;
+	else{
+		video.muted = false;
+		document.getElementById('volume').innerHTML = video.volume * 100 + '%';
 		document.getElementById('mute').innerHTML = 'Mute';
 	}
 
