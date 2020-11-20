@@ -68,12 +68,12 @@ document.querySelector("#volumeSlider").addEventListener("change", function() {
 });
 
 
-document.querySelector("#old").addEventListener("click", function() {
+document.querySelector("#old").addEventListener("click", function(){
 	document.getElementById("old").classList.add("oldTime");
 	console.log("oldtime");
-};
+});
 
 document.querySelector("#original").addEventListener("click", function() {
 	document.getElementById("original").classList.add("oldTime");
 	console.log("orignal");
-};
+});
